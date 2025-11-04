@@ -58,9 +58,12 @@
 
     <Button
         android:id="@+id/bottom"
-        style=""
+        style="@style/button"
         android:layout_width="0dp"
         android:layout_height="60dp"
+        android:backgroundTint="@color/button_custom"
+        android:onClick="openMain"
+        android:textColor="@color/grey_100"
         app:layout_constraintEnd_toEndOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         android:layout_marginTop="0dp"
@@ -68,14 +71,12 @@
         app:layout_constraintTop_toBottomOf="@id/til2"
         />
     <Button
-        android:id="@+id/bottom2"
-        style="@style/ShapeAppearanceOverlay.Material3.Corner.Bottom"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
+        android:id="@+id/bottominverse"
+        style="@style/buttonoutlined"
         app:layout_constraintEnd_toEndOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        android:layout_marginTop="0dp"
         android:text="SINGUP"
+        android:onClick="openSignup"
         app:layout_constraintTop_toBottomOf="@id/bottom"
         />
 <androidx.constraintlayout.widget.Guideline
