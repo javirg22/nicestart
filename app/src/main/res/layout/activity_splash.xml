@@ -8,6 +8,12 @@
     android:background="@drawable/gradient2"
     tools:context=".splash">
     <ImageView
+        android:id="@+id/backview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
         android:id="@+id/logoSplash"
         android:layout_width="100dp"
         android:layout_height="100dp"
