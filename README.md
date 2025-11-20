@@ -60,7 +60,7 @@ Futuras mejoras planificadas:
 ## Imagenes
 ---
 **imagen del logo**
-![splash](img/splash.png)
+![splash](img/splash.mp4)
 ---
 **imagen del menu**
 ![menu](img/menu.png)
