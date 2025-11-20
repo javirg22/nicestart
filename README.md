@@ -53,14 +53,18 @@ Futuras mejoras planificadas:
 ** Gracias por usar NiceStart. ¡Tu próximo proyecto puede empezar aquí!** 🚀
 
 **Actualizaciones**
-**He creado un meno al mantener pulsado la palabra del main como en la imagen **
-**Ademas tambien he una animacion en el logo al entrar en la app creando un pantalla llamada splash **
-**He añadido en el main en la appbar un menu iacon y un icono **
+- He creado un meno al mantener pulsado la palabra del main como en la imagen 
+- Ademas tambien he una animacion en el logo al entrar en la app creando un pantalla llamada splash 
+- He añadido en el main en la appbar un menu iacon y un icono 
 
 ## Imagenes
+---
 **imagen del logo**
 ![splash](img/splash.png)
+---
 **imagen del menu**
 ![menu](img/menu.png)
+---
 **imagen del appbar**
 ![appbar](img/appbar.png)
+---
