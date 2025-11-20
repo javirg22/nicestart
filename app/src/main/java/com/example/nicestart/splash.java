@@ -3,6 +3,8 @@ package com.example.nicestart;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -20,6 +22,9 @@ public class splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
+        ImageView thunder = findViewById(R.id.logoSplash);
+        Animation myanim = AnimationUtils.loadAnimation(this,R.anim.blink);
+        thunder.startAnimation(myanim);
 
         openApp();
         ImageView mSea = findViewById(R.id.backview);
