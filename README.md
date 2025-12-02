@@ -51,20 +51,38 @@ Futuras mejoras planificadas:
 ---
 
 ** Gracias por usar NiceStart. ¡Tu próximo proyecto puede empezar aquí!** 🚀
-
+---
 **Actualizaciones**
+---
 - He creado un meno al mantener pulsado la palabra del main como en la imagen 
 - Ademas tambien he una animacion en el logo al entrar en la app creando un pantalla llamada splash 
 - He añadido en el main en la appbar un menu iacon y un icono 
 
 ## Imagenes
 ---
-**imagen del logo**
-![splash](img/splash.mp4)
+**video del logo**
+![splash](img/splash.gif)
 ---
 **imagen del menu**
 ![menu](img/menu.png)
 ---
 **imagen del appbar**
 ![appbar](img/appbar.png)
+---
+**Actualizacion**
+---
+-He credo un alert dialog donde una de las tres opciones te lleva a la pantallade perfil 
+-He creado una pantalla de perfil donde se muestra un imagen del perfil, datos personales y dos botones 
+-He cambiado la animacion del inicio
+
+## Imagenes y videos
+---
+**video de la nueva animacion**
+![Splash](img/splashMejorado.gif)
+---
+**imagen del perfil**
+![Splash](img/perfil.png)
+---
+**imagen del alert dialog**
+![Splash](img/alert.png)
 ---

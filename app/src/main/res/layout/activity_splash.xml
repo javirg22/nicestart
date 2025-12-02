@@ -47,6 +47,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+<!--git log -oneline
+git reset -hard <ID_DEL_COMMIT_QUE_FUNCIONA>
+git push origin main -force
+-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

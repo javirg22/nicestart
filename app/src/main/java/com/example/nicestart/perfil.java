@@ -31,4 +31,10 @@ public class perfil extends AppCompatActivity {
                 .circleCrop()
                 .into(mSea);
     }
+    public void openLogin(View v) {
+        Intent intent = new Intent(perfil.this, login.class);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        //intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+    }
 }

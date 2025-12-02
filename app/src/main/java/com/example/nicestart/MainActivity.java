@@ -1,5 +1,7 @@
 package com.example.nicestart;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -10,11 +12,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class MainActivity extends AppCompatActivity {
     private SwipeRefreshLayout swipeLayout;
@@ -34,7 +39,59 @@ public class MainActivity extends AppCompatActivity {
         swipeLayout= findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(monRefreshListener);
     }
-    @Override
+    public void showAlertDialogButtonClicked(MainActivity mainActivity) {
+
+        // setup the alert builder
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+//        //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
+        builder.setTitle("Achtung!");
+        builder.setMessage("Where do you go?");
+        builder.setIcon(R.drawable.outline_emoji_people_24);
+        builder.setCancelable(true);
+
+//        // un XML a medida para el diálogo
+//        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+
+        // add the buttons
+        builder.setPositiveButton("Perfil", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // do something like...
+                Intent intent = new Intent(MainActivity.this, perfil.class);
+                startActivity(intent);
+//                dialog.dismiss();
+
+            }
+        });
+//
+        builder.setNegativeButton("Do nothing", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+
+//                dialog.dismiss();
+            }
+        });
+//
+        builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+                System.exit(0);
+
+//                dialog.dismiss();
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+        @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo){
         getMenuInflater().inflate(R.menu.menu_context,menu);
     }
@@ -56,10 +113,18 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_appbar,menu);
         return true;
     }
-   // @Override
-   // public boolean onOptionsItemSelected(MenuItem menu){
-       // int id = item.getItemId();
-   // }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.item1) {
+            showAlertDialogButtonClicked(MainActivity.this);
+        }
+        if (id == R.id.item2) {
+            Toast toast = Toast.makeText(this, "Fixing", Toast.LENGTH_LONG);
+            toast.show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
     protected SwipeRefreshLayout.OnRefreshListener
             monRefreshListener= new SwipeRefreshLayout.OnRefreshListener() {
        @Override
