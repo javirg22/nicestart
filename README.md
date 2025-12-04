@@ -6,11 +6,9 @@ El objetivo de este proyecto es servir como punto de partida (“nice start”) 
 ---
 
 ## Imagenes
-**imagen del login.**
-![login activity](img/login.png)
----
-**imagen del registro.**
-![signup](img/signup.png)
+| imagen del login. |imagen del registro|
+|---|---|
+|![login activity](img/login.png)|![signup](img/signup.png)|
 ---
 
 ## Contribuir
@@ -60,14 +58,9 @@ Futuras mejoras planificadas:
 
 ## Imagenes
 ---
-**video del logo**
-![splash](img/splash.gif)
----
-**imagen del menu**
-![menu](img/menu.png)
----
-**imagen del appbar**
-![appbar](img/appbar.png)
+|video del logo |imagen del menu|imagen del appbar|
+|---|---|---|
+| ![splash](img/splash.gif) |![menu](img/menu.png)|![appbar](img/appbar.png)|
 ---
 **Actualizacion**
 ---
@@ -77,12 +70,7 @@ Futuras mejoras planificadas:
 
 ## Imagenes y videos
 ---
-**video de la nueva animacion**
-![Splash](img/splashMejorado.gif)
----
-**imagen del perfil**
-![Splash](img/perfil.png)
----
-**imagen del alert dialog**
-![Splash](img/alert.png)
+|video de la nueva animacion|imagen del perfil|imagen del alert dialog|
+|---|---|---|
+|![Splash](img/splashMejorado.gif)|![Splash](img/perfil.png)|![Splash](img/alert.png)|
 ---

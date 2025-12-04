@@ -23,6 +23,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 public class MainActivity extends AppCompatActivity {
     private SwipeRefreshLayout swipeLayout;
+    private WebView miVisorWeb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,20 @@ public class MainActivity extends AppCompatActivity {
         registerForContextMenu(mycontext);
         swipeLayout= findViewById(R.id.myswipe);
         swipeLayout.setOnRefreshListener(monRefreshListener);
+        WebView mycontext2=findViewById(R.id.vistaweb);
+        registerForContextMenu(mycontext2);
+        miVisorWeb=(WebView) findViewById(R.id.vistaweb);
+        String html="<html>"+
+                "<head><style>"+
+                "html,body{margin:0;padding:0;height:100%;overflow:hidden;}"+
+                "img{width:100%; height:100%;object-fit:cover;}"+
+                "</style></head>"+
+                "<body>"+
+                "<img src='https://thispersondoesnotexist.com'/>"+
+                "</body></html>";
+        miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
+
+
     }
     public void showAlertDialogButtonClicked(MainActivity mainActivity) {
 
@@ -129,8 +144,10 @@ public class MainActivity extends AppCompatActivity {
             monRefreshListener= new SwipeRefreshLayout.OnRefreshListener() {
        @Override
        public void onRefresh() {
-           Toast toast0= Toast.makeText(MainActivity.this,"Hi there!",Toast.LENGTH_LONG);
-           toast0.show();
+          // Toast toast0= Toast.makeText(MainActivity.this,"Hi there!",Toast.LENGTH_LONG);
+          // toast0.show();
+
+           miVisorWeb.reload();
            swipeLayout.setRefreshing(false);
        }
    };
