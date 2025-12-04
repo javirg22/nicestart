@@ -64,9 +64,9 @@ Futuras mejoras planificadas:
 ---
 **Actualizacion**
 ---
--He credo un alert dialog donde una de las tres opciones te lleva a la pantallade perfil 
--He creado una pantalla de perfil donde se muestra un imagen del perfil, datos personales y dos botones 
--He cambiado la animacion del inicio
+- He credo un alert dialog donde una de las tres opciones te lleva a la pantallade perfil 
+- He creado una pantalla de perfil donde se muestra un imagen del perfil, datos personales y dos botones 
+- He cambiado la animacion del inicio
 
 ## Imagenes y videos
 ---
