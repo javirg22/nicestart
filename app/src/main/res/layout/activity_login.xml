@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:alpha=".6"
             android:background="@color/white"
-            android:hint="Username"
+            android:hint="@string/Username"
             android:gravity="center_horizontal"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
@@ -60,7 +60,7 @@
             android:alpha=".6"
             android:background="@color/white"
             android:gravity="center_horizontal"
-            android:hint="Password" />
+            android:hint="@string/Password" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -74,7 +74,7 @@
         app:layout_constraintEnd_toEndOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         android:layout_marginTop="0dp"
-        android:text="LOGIN"
+        android:text="@string/LOGIN"
         app:layout_constraintTop_toBottomOf="@id/til2"
         />
     <Button
@@ -82,7 +82,7 @@
         style="@style/buttonoutlined"
         app:layout_constraintEnd_toEndOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        android:text="SINGUP"
+        android:text="@string/SINGUP"
         android:onClick="openSignup"
         app:layout_constraintTop_toBottomOf="@id/bottom"
         />

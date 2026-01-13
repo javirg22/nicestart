@@ -74,3 +74,12 @@ Futuras mejoras planificadas:
 |---|---|---|
 |![Splash](img/splashMejorado.gif)|![Splash](img/perfil.png)|![Splash](img/alert.png)|
 ---
+**Actualizaciones**
+---
+- He Añadido dos idiomas a la aplicacion 
+- He añadido el modo oscuro 
+## imagenes
+| imagen de los idiomas              | imagen del modo oscuro (ejemplo del perfil) |
+|------------------------------------|---------------------------------------------|
+| ![login activity](img/idiomas.png) | ![login activity](img/perfilModoOscuro.png) |
+---

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="LOGIN">ACCESO</string>
+    <string name="SINGUP">REGISTRO</string>
+    <string name="Password">Contraseña</string>
+    <string name="Username">Usuario</string>
+</resources>
