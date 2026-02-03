@@ -64,22 +64,29 @@ Futuras mejoras planificadas:
 ---
 **Actualizacion**
 ---
-- He credo un alert dialog donde una de las tres opciones te lleva a la pantallade perfil 
+- He credo un alert dialog donde una de las tres opciones te lleva a la pantalla de perfil 
 - He creado una pantalla de perfil donde se muestra un imagen del perfil, datos personales y dos botones 
 - He cambiado la animacion del inicio
 
 ## Imagenes y videos
 ---
-|video de la nueva animacion|imagen del perfil|imagen del alert dialog|
-|---|---|---|
-|![Splash](img/splashMejorado.gif)|![Splash](img/perfil.png)|![Splash](img/alert.png)|
+|video de la nueva animacion| imagen del perfil         | imagen del alert dialog |
+|---|---------------------------|-------------------------|
+|![Splash](img/splashMejorado.gif)| ![perfil](img/perfil.png) | ![alert](img/alert.png) |
 ---
 **Actualizaciones**
 ---
 - He Añadido dos idiomas a la aplicacion 
 - He añadido el modo oscuro 
 ## imagenes
-| imagen de los idiomas              | imagen del modo oscuro (ejemplo del perfil) |
-|------------------------------------|---------------------------------------------|
-| ![login activity](img/idiomas.png) | ![login activity](img/perfilModoOscuro.png) |
+| imagen de los idiomas       | imagen del modo oscuro (ejemplo del perfil) |
+|-----------------------------|---------------------------------------------|
+| ![idiomas](img/idiomas.png) | ![modo oscuro](img/perfilModoOscuro.png)    |
 ---
+**Actualizacion**
+---
+- he añadido un activity llamado mainbab(esta en proceso)
+## imagen
+| imagen del mainbab          |
+|-----------------------------|
+| ![mainbab](img/mainbab.png) |
